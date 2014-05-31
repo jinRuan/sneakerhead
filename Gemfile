@@ -36,7 +36,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test
 
-gem 'mongoid'
+gem 'mongoid', '~>4.0.0.beta1', github: 'mongoid/mongoid'
 #, '~> 3', github: 'mongoid/mongoid'
 #gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 gem 'bson_ext'
