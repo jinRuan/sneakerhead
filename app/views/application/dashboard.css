@@ -10,7 +10,7 @@ body {
 }
 
 p {
-    color: white;
+    color: black;
 }
 
 div {
@@ -21,8 +21,7 @@ div {
 #table1 {
     width:30%;
      background-color:#9b59b6 ;
-    margin-right: auto;
-    margin-left: auto;
+    float:left;
 }
 
 #table2 {
@@ -35,8 +34,7 @@ div {
 #table3 {
     width:30%;
     background-color:#d35400 ;
-    margin-right: auto;
-    margin-left: auto;
+   float:right;
 }
 
 div p {
