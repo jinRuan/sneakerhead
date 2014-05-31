@@ -12,3 +12,32 @@ body {
 p {
     color: white;
 }
+
+div {
+    height: 10%;
+}
+
+#table1 {
+    width:30%;
+     background-color:#9b59b6 ;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#table2 {
+    width:30%;
+    background-color:#e74c3c ;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#table3 {
+    width:30%;
+    background-color:#d35400 ;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div p {
+    text-align: center;
+}

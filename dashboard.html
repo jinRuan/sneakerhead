@@ -6,12 +6,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <title></title>
 </head>
 <body>
-<table class="table">
+<table class="table" id="firsttable">
     <thead>
         <tr>
             <td><p>User</p></td>
@@ -29,13 +30,77 @@
         <td><p>aloha</p></td>
     </tr>
 
+
+</table>
+<br>
+
+<table class="table" id="secondtable">
+    <thead>
+        <tr>
+            <td><p>Shoe Name</p></td>
+            <td><p>Site</p></td>
+            <td><p>Quantity</p></td>
+            <td><p>Price</p></td>
+        </tr>
+    </thead>
     <tr>
-        <td><p>aloha</p></td>
         <td><p>aloha</p></td>
         <td><p>aloha</p></td>
         <td><p>aloha</p></td>
         <td><p>aloha</p></td>
     </tr>
 </table>
+
+<br>
+
+<table class="table" id="thirdtable">
+    <thead>
+    <tr>
+        <td><p>SKU</p></td>
+        <td><p>Name</p></td>
+        <td><p>Quantity</p></td>
+        <td><p>Price</p></td>
+    </tr>
+    </thead>
+    <tr>
+        <td><p>aloha</p></td>
+        <td><p>aloha</p></td>
+        <td><p>aloha</p></td>
+        <td><p>aloha</p></td>
+    </tr>
+</table>
+
+<div id="table1"><p>User Data</p></div><br>
+<div id="table2"><p>Inventory</p></div><br>
+<div id="table3"><p>Purchase</p></div>
+
+
+
+<script>
+    $( document ).ready(function() {
+        $('.table').hide();
+    });
+
+    $('#table1').click(function(){
+        $('#firsttable').toggle();
+        $('#secondtable').hide();
+        $('#thirdtable').hide();
+
+    });
+
+    $('#table2').click(function(){
+        $('#secondtable').toggle();
+        $('#firsttable').hide();
+        $('#thirdtable').hide();
+
+    });
+
+    $('#table3').click(function(){
+        $('#thirdtable').toggle();
+        $('#secondtable').hide();
+        $('#firsttable').hide();
+
+    });
+</script>
 </body>
 </html>
